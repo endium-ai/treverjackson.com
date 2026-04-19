@@ -1,19 +1,22 @@
 # treverjackson.com
 
-Personal site. Hosted on Cloudflare Pages.
+Personal site. Static HTML served from Cloudflare Workers using the static assets binding.
+
+## Stack
+
+- Cloudflare Workers + Static Assets
+- No build step, no framework — just HTML/CSS
 
 ## Deploy
 
 ```bash
-wrangler pages deploy ./ --project-name=treverjackson
+wrangler deploy
 ```
 
 ## Local preview
 
-Just open `index.html` in a browser — it's a static single-page site with no build step.
-
-Or use wrangler's local dev:
+Open `public/index.html` directly in a browser, or use wrangler's local dev server:
 
 ```bash
-wrangler pages dev ./
+wrangler dev
 ```
