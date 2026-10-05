@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not found — Trever Jackson</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23111'/><text x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23f2f0eb' text-anchor='middle'>TJ</text></svg>">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1a1a1a;
+    --muted: #5f5f5c;
+    --faint: #8d8c87;
+    --rule: #e6e3dc;
+    --accent: #8a5a1c;
+    --serif: "Iowan Old Style", "Charter", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111110;
+      --text: #ecebe6;
+      --muted: #a3a29c;
+      --faint: #74736e;
+      --rule: #2a2a28;
+      --accent: #d4a65f;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 18px/1.65 var(--serif);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: inherit; text-decoration-color: var(--rule); text-decoration-thickness: 1px; text-underline-offset: 3px; transition: color .15s, text-decoration-color .15s; }
+  a:hover { color: var(--accent); text-decoration-color: currentColor; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 24px; }
+
+  header.top { padding: 32px 0 0; }
+  header.top .wrap { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; font: 14px/1.4 var(--sans); }
+  .mark { font-weight: 600; text-decoration: none; letter-spacing: -.01em; }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 18px; }
+  nav a:first-child { margin-left: 0; }
+  nav a:hover { color: var(--text); }
+
+  .intro { padding: 96px 0 56px; }
+  h1 { font-size: clamp(2.4rem, 7vw, 3.25rem); line-height: 1.08; font-weight: 500; letter-spacing: -.025em; margin: 0 0 14px; }
+  .tagline { font-size: clamp(1.2rem, 3.4vw, 1.4rem); line-height: 1.4; color: var(--muted); font-style: italic; margin: 0 0 32px; }
+  .bio { margin: 0 0 12px; }
+  .bio + .bio { color: var(--muted); }
+  .meta { font: 13px/1.5 var(--mono); color: var(--faint); margin-top: 24px; }
+
+  section { padding: 40px 0; border-top: 1px solid var(--rule); }
+  h2 { font: 600 12px/1.4 var(--sans); text-transform: uppercase; letter-spacing: .14em; color: var(--faint); margin: 0 0 24px; }
+  ul.list { list-style: none; margin: 0; padding: 0; }
+  ul.list li { padding: 0 0 22px; }
+  ul.list li:last-child { padding-bottom: 0; }
+  .item-title { font-weight: 600; font-size: 1.08rem; }
+  .item-title a { text-decoration: none; }
+  .item-title a::after { content: " ↗"; font-weight: 400; color: var(--faint); font-family: var(--sans); font-size: .85em; }
+  .item-title a:hover::after { color: var(--accent); }
+  .item-desc { color: var(--muted); margin: 2px 0 0; }
+  .item-extra { font: 13px/1.5 var(--mono); color: var(--faint); margin-top: 4px; }
+  .item-extra a { color: var(--faint); }
+
+  .soon { color: var(--muted); font-style: italic; margin: 0; }
+
+  ol.work { list-style: none; margin: 0; padding: 0; }
+  ol.work li { display: grid; grid-template-columns: 128px 1fr; gap: 20px; padding: 0 0 14px; }
+  .when { font: 13px/1.9 var(--mono); color: var(--faint); white-space: nowrap; }
+  .role b { font-weight: 600; }
+  .role span { color: var(--muted); }
+
+  ul.elsewhere { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; font: 15px/1.6 var(--sans); }
+
+  footer { padding: 48px 0 56px; border-top: 1px solid var(--rule); margin-top: 24px; font: 13px/1.6 var(--sans); color: var(--faint); }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; }
+  footer .wrap { padding-top: 0; }
+
+  @media (max-width: 520px) {
+    body { font-size: 17px; }
+    .intro { padding: 64px 0 40px; }
+    nav a { margin-left: 14px; }
+    ol.work li { grid-template-columns: 1fr; gap: 0; padding-bottom: 16px; }
+    .when { line-height: 1.5; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="/">Trever Jackson</a>
+    <nav aria-label="Primary">
+      <a href="/#built">Built</a>
+      <a href="/#writing">Writing</a>
+      <a href="/#work">Work</a>
+      <a href="/#elsewhere">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="intro">
+      <div class="meta" style="margin:0 0 16px">404</div>
+      <h1>Nothing here.</h1>
+      <p class="tagline">That page doesn’t exist, or it moved.</p>
+      <p class="bio"><a href="/">← Back to the homepage</a></p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Trever Jackson · Scarborough, Maine</span>
+    <span>Plain HTML, served from Cloudflare Workers</span>
+  </div>
+</footer>
+
+</body>
+</html>
